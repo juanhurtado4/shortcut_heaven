@@ -1,0 +1,17 @@
+/* Vars */
+$bodyMargin: 0;
+$bezzelHeight: 24px;
+$backgroundColor: #D8D6D8;
+$bezzelColor: #DEDCDE;
+
+body {
+  margin: $bodyMargin;
+}
+
+.bezzel {
+  height: $bezzelHeight;
+  background-color: $bezzelColor;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding-top: 3px;
+}
