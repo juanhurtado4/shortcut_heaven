@@ -1,8 +1,4 @@
-/* Vars */
-$bodyMargin: 0;
-$bezzelHeight: 24px;
-$backgroundColor: #D8D6D8;
-$bezzelColor: #DEDCDE;
+@import vars.scss
 
 body {
   margin: $bodyMargin;
