@@ -1,0 +1,138 @@
+/*******************************/
+/**** Vars ****/
+/*******************************/
+
+:root {
+  --bodyMargin: 0;
+  --bezzelHeight: 1.3em;
+  --bezzelBgColor: #DDDBDD;
+  --editorBgColor: #282C34;
+  --navTabFontColor: #D7DAE0;
+  --navTabBgColor: #21252B;
+  --asideNumColor: #4B5364;
+  --editorActiveLn: #2C323C;
+
+}
+
+html {
+  margin: 10px;
+
+}
+
+body {
+  margin: var(--bodyMargin);
+  font-size: 20px;
+
+}
+
+.bezzel {
+  /* height: var(--bezzelHeight); */
+  background-color: var(--bezzelBgColor);
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding-top: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.bezzel span,
+.bezzel div {
+  margin-right: 4px;
+}
+
+.bezzel > span {
+  margin-left: 40%;
+}
+
+.close {
+  background-color: #FC635D;
+  height: .7em;
+  width: .7em;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 0;
+  margin-left: 12px;
+
+}
+
+.mini {
+  background-color: #FDBC40;
+  height: .7em;
+  width: .7em;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 0;
+
+}
+
+.full {
+  background-color: #34C84A;
+  height: .7em;
+  width: .7em;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 0;
+
+}
+
+.nav-tab {
+  height: 1.5em;
+  background-color: var(--navTabBgColor);
+
+}
+
+.nav-tab div {
+  color: var(--navTabFontColor);
+  background-color: var(--editorBgColor);
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75%;
+
+}
+
+.editor {
+  background-color: var(--editorBgColor);
+}
+
+.editor aside {
+  display: flex;
+  flex-direction: column;
+  color: var(--asideNumColor);
+  padding: 0 1em;
+
+}
+
+aside span > span {
+  background-color: var(--editorActiveLn);
+  height: 1.5em;
+  width: 90%;
+  display: inline-block;
+  margin: 0 1em;
+
+}
+
+@keyframes blinker {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+
+}
+
+.editor-blinker div {
+  font-size: 1.5em;
+  color: #528BFF;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-duration: .9s;
+
+}
