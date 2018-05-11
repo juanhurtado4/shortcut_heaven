@@ -11,21 +11,18 @@
     <header>
 
       <div class="bezzel">
-        <!-- <div></div>
-        <div></div>
-        <div></div> -->
-        <div class="close"></div>
-        <div class="mini"></div>
-        <div class="full"></div>
-        <span>
+        <div class="bezzel__close-btn"></div>
+        <div class="bezzel__mini-btn"></div>
+        <div class="bezzel__full-btn"></div>
+        <span class="bezzel__title">
           atom_shortcut.js - ~/code/shorcuts
         </span>
 
       </div>
 
       <nav>
-        <div class="nav-tab">
-          <div>index.js</div>
+        <div class="nav">
+          <div class="nav__tab">index.js</div>
         </div>
 
       </nav>
@@ -33,12 +30,15 @@
     </header>
 
     <div class="editor">
-      <aside>
+      <aside class="editor__ln-nums">
           <!-- <span class="editor-active-ln"> -->
-          <span>
+          <span class="editor__ln--1">
             1
-            <span class="editor-blinker"><div>|</div></span>
+            <span class="editor__ln--active">
+              <div class="editor__ln__blinker">|</div>
+            </span>
           </span>
+
           <span>2</span>
           <span>3</span>
           <span>4</span>
