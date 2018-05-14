@@ -1,16 +1,5 @@
 @import "_vars.scss";
 
-.bezzel {
-  background-color: $bezzelBgColor;
-  border-radius: 10px 10px 0px 0px;
-  text-align: center;
-  padding-top: 3px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-}
-
 .bezzel span,
 .bezzel div {
   margin-right: 4px;
