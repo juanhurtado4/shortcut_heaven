@@ -2,6 +2,11 @@
 /*** Base ***/
 /**************************/
 
+/* Color */
+$colorPrimary: #34C84A;
+$colorSecondary: #FDBC40;
+$colorCaution: #FC635D;
+
 /* Dimension */
 $bodyMargin: 0;
 $htmlMargin: 10px;
@@ -10,14 +15,16 @@ $htmlMargin: 10px;
 $baseFontSize: 20px;
 
 
+
+
 /**************************/
 /*** Bezzel ***/
 /**************************/
 
-$bezzelHeight: 1.3em;
+$bezelHeight: 1.3em;
 
-$bezzelHeight: 1.3em;
-$bezzelBgColor: #DDDBDD;
+$bezelHeight: 1.3em;
+$bezelBgColor: #DDDBDD;
 $editorBgColor: #282C34;
 $navTabFontColor: #D7DAE0;
 $navTabBgColor: #21252B;

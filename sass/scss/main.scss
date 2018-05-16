@@ -1,44 +1,7 @@
-@import "_vars.scss";
-
-.bezzel span,
-.bezzel div {
-  margin-right: 4px;
-}
-
-.bezzel > span {
-  margin-left: 40%;
-}
-
-.close {
-  background-color: #FC635D;
-  height: .7em;
-  width: .7em;
-  border-radius: 100px;
-  display: inline-block;
-  margin: 0;
-  margin-left: 12px;
-
-}
-
-.mini {
-  background-color: #FDBC40;
-  height: .7em;
-  width: .7em;
-  border-radius: 100px;
-  display: inline-block;
-  margin: 0;
-
-}
-
-.full {
-  background-color: #34C84A;
-  height: .7em;
-  width: .7em;
-  border-radius: 100px;
-  display: inline-block;
-  margin: 0;
-
-}
+@import "./vars/_vars.scss";
+@import "./base/_base.scss";
+@import "./components/_btns.scss";
+@import "./components/_bezel.scss";
 
 .nav-tab {
   height: 1.5em;
