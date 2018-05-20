@@ -79,6 +79,12 @@ body {
   animation-iteration-count: infinite;
   animation-duration: .9s; }
 
+.footer {
+  background-color: #21252B;
+  height: 1rem;
+  margin: 0 1.5rem;
+  border-radius: 0 0 10px 10px; }
+
 .bezel {
   display: flex;
   justify-content: flex-start;
