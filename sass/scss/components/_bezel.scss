@@ -1,7 +1,7 @@
 .bezel {
   background-color: $bezelBgColor;
   border-radius: 10px 10px 0px 0px;
-  text-align: center;
-  padding-top: 3px;
+  padding: 3px;
+  margin: $marginBaseComponent;
 
 }

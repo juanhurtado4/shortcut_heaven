@@ -4,11 +4,20 @@
 }
 
 .btn--secondary {
-  background-color: $colorCaution;
+  background-color: $colorSecondary;
 
 }
 
 .btn--caution {
-  background-color: $colorCaution;
+  background-color: $colorPrimary;
+
+}
+
+.btn--bezel {
+  height: .6rem;
+  width: .6rem;
+  border-radius: 100px;
+  display: inline-block;
+  margin-left: .5rem;
 
 }

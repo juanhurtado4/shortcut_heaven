@@ -27,57 +27,32 @@ body {
   background-color: #FC635D; }
 
 .btn--secondary {
-  background-color: #FC635D; }
+  background-color: #FDBC40; }
 
 .btn--caution {
-  background-color: #FC635D; }
+  background-color: #34C84A; }
+
+.btn--bezel {
+  height: .6rem;
+  width: .6rem;
+  border-radius: 100px;
+  display: inline-block;
+  margin-left: .5rem; }
 
 .bezel {
   background-color: #DDDBDD;
   border-radius: 10px 10px 0px 0px;
-  text-align: center;
-  padding-top: 3px; }
+  padding: 3px;
+  margin: 1.5rem 1.5rem 0px 1.5rem; }
 
-.nav-tab {
-  height: 1.5em;
-  background-color: #21252B; }
-
-.nav-tab div {
-  color: #D7DAE0;
-  background-color: #282C34;
-  height: 100%;
-  width: 25%;
+.bezel {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 75%; }
+  justify-content: flex-start;
+  align-items: center; }
 
-.editor {
-  background-color: #282C34; }
-
-.editor aside {
-  display: flex;
-  flex-direction: column;
-  color: #4B5364;
-  padding: 0 1em; }
-
-aside span > span {
-  background-color: #2C323C;
-  height: 1.5em;
-  width: 90%;
-  display: inline-block;
-  margin: 0 1em; }
-
-@keyframes blinker {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-.editor-blinker div {
-  font-size: 1.5em;
-  color: #528BFF;
-  animation-name: blinker;
-  animation-iteration-count: infinite;
-  animation-duration: .9s; }
+.bezel__title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
 
 /*# sourceMappingURL=main.css.map */

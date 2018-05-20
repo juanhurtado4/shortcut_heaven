@@ -8,8 +8,9 @@ $colorSecondary: #FDBC40;
 $colorCaution: #FC635D;
 
 /* Dimension */
-$bodyMargin: 0;
-$htmlMargin: 10px;
+$marginBaseBody: 0;
+$marginBaseComponent: 1.5rem 1.5rem 0px 1.5rem;
+$paddingBaseBody: 0;
 
 /* Font */
 $baseFontSize: 20px;

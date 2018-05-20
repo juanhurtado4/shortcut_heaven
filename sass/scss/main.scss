@@ -2,63 +2,64 @@
 @import "./base/_base.scss";
 @import "./components/_btns.scss";
 @import "./components/_bezel.scss";
+@import "./layout/_layout.scss";
 
-.nav-tab {
-  height: 1.5em;
-  background-color: $navTabBgColor;
-
-}
-
-.nav-tab div {
-  color: $navTabFontColor;
-  background-color: $editorBgColor;
-  height: 100%;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 75%;
-
-}
-
-.editor {
-  background-color: $editorBgColor;
-}
-
-.editor aside {
-  display: flex;
-  flex-direction: column;
-  color: $asideNumColor;
-  padding: 0 1em;
-
-}
-
-aside span > span {
-  background-color: $editorActiveLn;
-  height: 1.5em;
-  width: 90%;
-  display: inline-block;
-  margin: 0 1em;
-
-}
-
-@keyframes blinker {
-
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-
-}
-
-.editor-blinker div {
-  font-size: 1.5em;
-  color: #528BFF;
-  animation-name: blinker;
-  animation-iteration-count: infinite;
-  animation-duration: .9s;
-
-}
+// .nav-tab {
+//   height: 1.5em;
+//   background-color: $navTabBgColor;
+//
+// }
+//
+// .nav-tab div {
+//   color: $navTabFontColor;
+//   background-color: $editorBgColor;
+//   height: 100%;
+//   width: 25%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 75%;
+//
+// }
+//
+// .editor {
+//   background-color: $editorBgColor;
+// }
+//
+// .editor aside {
+//   display: flex;
+//   flex-direction: column;
+//   color: $asideNumColor;
+//   padding: 0 1em;
+//
+// }
+//
+// aside span > span {
+//   background-color: $editorActiveLn;
+//   height: 1.5em;
+//   width: 90%;
+//   display: inline-block;
+//   margin: 0 1em;
+//
+// }
+//
+// @keyframes blinker {
+//
+//     0% {
+//       opacity: 0;
+//     }
+//
+//     100% {
+//       opacity: 1;
+//     }
+//
+// }
+//
+// .editor-blinker div {
+//   font-size: 1.5em;
+//   color: #528BFF;
+//   animation-name: blinker;
+//   animation-iteration-count: infinite;
+//   animation-duration: .9s;
+//
+// }
