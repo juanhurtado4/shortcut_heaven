@@ -16,6 +16,14 @@
 
 }
 
+.editor__blinker {
+  color: $colorEditorBlinker;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-duration: .9s;
+
+}
+
 @keyframes blinker {
 
     0% {
@@ -25,13 +33,5 @@
     100% {
       opacity: 1;
     }
-
-}
-
-.editor__blinker {
-  color: $colorEditorBlinker;
-  animation-name: blinker;
-  animation-iteration-count: infinite;
-  animation-duration: .9s;
 
 }
