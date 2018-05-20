@@ -66,8 +66,9 @@ body {
 .editor__ln--active {
   margin-left: 1.5rem;
   font-size: 1.3rem;
-  padding-right: 60rem;
-  background-color: #2C323C; }
+  padding-right: 90%;
+  background-color: #2C323C;
+  display: inline-block; }
 
 .editor__blinker {
   color: #528BFF;

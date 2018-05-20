@@ -11,8 +11,10 @@
 .editor__ln--active {
   margin-left: 1.5rem;
   font-size: 1.3rem;
-  padding-right: 60rem;
+  padding-right: 90%;
   background-color: $colorEditorActiveLn;
+  display: inline-block;
+
 
 }
 
@@ -21,6 +23,7 @@
   animation-name: blinker;
   animation-iteration-count: infinite;
   animation-duration: .9s;
+
 
 }
 
