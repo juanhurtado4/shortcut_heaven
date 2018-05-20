@@ -55,6 +55,30 @@ body {
   width: 25%;
   text-align: center; }
 
+.editor {
+  margin: 0 1.5rem;
+  background-color: #282C34;
+  color: #4B5364;
+  padding: 0 1.5rem;
+  padding-bottom: 1rem; }
+
+.editor__ln--active {
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  padding-right: 60rem;
+  background-color: #2C323C; }
+
+@keyframes blinker {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.editor__blinker {
+  color: #528BFF;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-duration: .9s; }
+
 .bezel {
   display: flex;
   justify-content: flex-start;
@@ -64,5 +88,9 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
+
+.editor {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */

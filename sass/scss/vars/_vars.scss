@@ -6,12 +6,17 @@
 $colorPrimary: #34C84A;
 $colorSecondary: #FDBC40;
 $colorCaution: #FC635D;
-$colorEditorBg: #21252B;
-$colorEditorTabBg: #282C34;
+$colorEditorNavBg: #21252B;
+$colorEditorBg: #282C34;
+$colorEditorNum: #4B5364;
+$colorEditorBlinker: #528BFF;
+$colorEditorActiveLn: #2C323C;
+
+
 
 /* Dimension */
 $marginBaseBody: 0;
-$marginBaseComponent: 1.5rem 1.5rem 0px 1.5rem;
+$marginBaseComponent: 0 1.5rem;
 $paddingBaseBody: 0;
 
 /* Font */
@@ -29,5 +34,3 @@ $bezelHeight: 1.3em;
 $bezelHeight: 1.3em;
 $bezelBgColor: #DDDBDD;
 $navTabFontColor: #D7DAE0;
-$asideNumColor: #4B5364;
-$editorActiveLn: #2C323C;

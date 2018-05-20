@@ -1,13 +1,13 @@
 .nav {
-  margin: 0 1.5rem;
-  background-color: $colorEditorBg;
+  margin: $marginBaseComponent;
+  background-color: $colorEditorNavBg;
   color: #fff;
 
 
 }
 
 .nav__tab {
-  background-color: $colorEditorTabBg;
+  background-color: $colorEditorBg;
   width: 25%;
   text-align: center;
 
