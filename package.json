@@ -1,0 +1,26 @@
+{
+  "name": "shortcut_heaven",
+  "version": "1.0.0",
+  "description": "A fun game that teaches you useful shortcuts that improves efficiency when coding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanhurtado4/shortcut_heaven.git"
+  },
+  "keywords": [
+    "shortcut",
+    "game"
+  ],
+  "author": "Juan Hurtado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanhurtado4/shortcut_heaven/issues"
+  },
+  "homepage": "https://github.com/juanhurtado4/shortcut_heaven#readme",
+  "dependencies": {
+    "hotkeys-js": "^3.3.1"
+  }
+}

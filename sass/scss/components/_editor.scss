@@ -11,9 +11,10 @@
 .editor__ln--active {
   margin-left: 1.5rem;
   font-size: 1.3rem;
-  padding-right: 90%;
-  background-color: $colorEditorActiveLn;
+  // padding-right: 90%;
+  // background-color: $colorEditorActiveLn;
   display: inline-block;
+  width: 80%;
 
 
 }
@@ -25,6 +26,19 @@
   animation-duration: .9s;
 
 
+}
+
+.editor__ln--input {
+  background-color: $colorEditorActiveLn;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.editor__ln--input::after {
+  content: "hello";
+  color: red;
+  font-size: 50px;
 }
 
 @keyframes blinker {

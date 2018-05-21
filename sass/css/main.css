@@ -66,15 +66,25 @@ body {
 .editor__ln--active {
   margin-left: 1.5rem;
   font-size: 1.3rem;
-  padding-right: 90%;
-  background-color: #2C323C;
-  display: inline-block; }
+  display: inline-block;
+  width: 80%; }
 
 .editor__blinker {
   color: #528BFF;
   animation-name: blinker;
   animation-iteration-count: infinite;
   animation-duration: .9s; }
+
+.editor__ln--input {
+  background-color: #2C323C;
+  border: none;
+  font-size: 20px;
+  width: 100%; }
+
+.editor__ln--input::after {
+  content: "hello";
+  color: red;
+  font-size: 50px; }
 
 @keyframes blinker {
   0% {
