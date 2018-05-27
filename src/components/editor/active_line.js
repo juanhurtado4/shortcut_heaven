@@ -6,7 +6,7 @@ class HotKeysDemo extends Component {
         super(props);
         this.state = {
             output: 'Trying this first',
-        }
+        };
         hotkeys('cmd+shift+d', (e, handle) => this.onCopySC(e, handle))
     }
     onCopySC(e, handle) {
