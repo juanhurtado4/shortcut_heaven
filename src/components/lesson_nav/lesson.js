@@ -7,9 +7,9 @@ class Lesson extends Component {
 
     render() {
         return (
-            <div className="nav__lesson">
-                <div className="nav__lesson--status"></div>
-                <a className="nav__lesson--title">{this.props.lesson}</a>
+            <div className="lesson_nav__lesson">
+                <div className="lesson_nav__lesson__status"></div>
+                <a className="lesson_nav__lesson__title">{this.props.lesson}</a>
             </div>
         )
     }
