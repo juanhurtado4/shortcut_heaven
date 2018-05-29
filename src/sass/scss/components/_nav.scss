@@ -6,6 +6,7 @@
 .nav__tab {
   @include nav-header;
   text-align: center;
+  padding: .3rem;
   width: 25%;
 
 }

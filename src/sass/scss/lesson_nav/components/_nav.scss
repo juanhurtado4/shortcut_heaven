@@ -8,7 +8,6 @@
 .lessons_nav__title {
   color: darken(#fff, 30%);
   font-size: $fontBaseSize;
-  //font-weight: 300;
   text-align: center;
   padding: .3rem;
 
@@ -18,7 +17,6 @@
   @include nav-header;
   border-bottom: 1px solid $colorDarkThemeLight;
   padding: .5rem;
-  //font-weight: 200;
 
 }
 

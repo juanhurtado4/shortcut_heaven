@@ -52,8 +52,8 @@ body {
 .nav__tab {
   background-color: #282C34;
   font-size: .8rem;
-  padding: .3rem;
   text-align: center;
+  padding: .3rem;
   width: 25%; }
 
 .editor {
@@ -128,7 +128,6 @@ body {
 .lessons_nav__lesson {
   background-color: #282C34;
   font-size: .8rem;
-  padding: .3rem;
   border-bottom: 1px solid #3e4451;
   padding: .5rem; }
 
