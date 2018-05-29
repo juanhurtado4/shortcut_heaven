@@ -1,0 +1,13 @@
+@mixin nav {
+  margin: $marginBaseComponent;
+  background-color: $colorNavBg;
+  color: #fff;
+
+}
+
+@mixin nav-header {
+  background-color: $colorEditorBg;
+  font-size: .8rem;
+  padding: .3rem;
+
+}
