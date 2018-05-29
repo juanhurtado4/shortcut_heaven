@@ -8,8 +8,8 @@ class LessonNavigation extends Component {
 
     render() {
         return (
-            <aside className="lesson_nav">
-                <h1 className="lesson_nav__title">{this.props.currentInterface.name} Shortcut Lessons</h1>
+            <aside className="lessons_nav">
+                <h1 className="lessons_nav__title">{this.props.currentInterface.name} Shortcuts</h1>
                 <LessonList lessons={this.props.currentInterface.shortcuts}/>
             </aside>
         )
