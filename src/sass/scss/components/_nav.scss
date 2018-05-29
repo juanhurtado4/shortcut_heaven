@@ -1,16 +1,11 @@
 .nav {
-  margin: $marginBaseComponent;
-  background-color: $colorNavBg;
-  color: #fff;
-
+  @include nav;
 
 }
 
 .nav__tab {
-  background-color: $colorEditorBg;
-  width: 25%;
+  @include nav-header;
   text-align: center;
-  font-size: .8rem;
-  padding: .3rem;
+  width: 25%;
 
 }

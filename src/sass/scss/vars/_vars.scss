@@ -11,6 +11,7 @@ $colorEditorBg: #282C34;
 $colorEditorNum: #4B5364;
 $colorEditorBlinker: #528BFF;
 $colorEditorActiveLn: #2C323C;
+$colorDarkThemeLight: lighten($colorEditorBg, 10%);
 
 
 
@@ -20,7 +21,7 @@ $marginBaseComponent: 0 1.5rem;
 $paddingBaseBody: 0;
 
 /* Font */
-$baseFontSize: 20px;
+$fontBaseSize: 20px;
 
 
 
@@ -32,5 +33,5 @@ $baseFontSize: 20px;
 $bezelHeight: 1.3em;
 
 $bezelHeight: 1.3em;
-$bezelBgColor: #DDDBDD;
-$navTabFontColor: #D7DAE0;
+$colorBezelBg: #DDDBDD;
+$colorNavTabFont: #D7DAE0;

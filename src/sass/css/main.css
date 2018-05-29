@@ -51,10 +51,10 @@ body {
 
 .nav__tab {
   background-color: #282C34;
-  width: 25%;
-  text-align: center;
   font-size: .8rem;
-  padding: .3rem; }
+  padding: .3rem;
+  text-align: center;
+  width: 25%; }
 
 .editor {
   margin: 0 1.5rem;
@@ -111,5 +111,28 @@ body {
 .editor {
   display: flex;
   flex-direction: column; }
+
+.lessons_nav {
+  margin: 0 1.5rem;
+  background-color: #21252B;
+  color: #fff;
+  width: 20%;
+  border-radius: .5rem; }
+
+.lessons_nav__title {
+  color: #b3b3b3;
+  font-size: 20px;
+  text-align: center;
+  padding: .3rem; }
+
+.lessons_nav__lesson {
+  background-color: #282C34;
+  font-size: .8rem;
+  padding: .3rem;
+  border-bottom: 1px solid #3e4451;
+  padding: .5rem; }
+
+.lessons_nav__lesson__title {
+  color: #999999; }
 
 /*# sourceMappingURL=main.css.map */
