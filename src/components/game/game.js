@@ -1,9 +1,19 @@
 import React, { Component } from "react";
+
 // import LessonTips from "../lesson_tips/lesson_tips";
 import LessonNavigation from "../lesson_nav/lesson_nav";
 import interfaceProps from "../interface/interface_props";
 
+/**
+ * Container component for the game
+ */
 class Game extends Component {
+
+
+    /**
+     * Initiate the starting interface and lesson for the game
+     * @param {object} props - Properties passed down from parent
+     */
     constructor(props) {
         super(props);
         this.state = {
@@ -13,18 +23,30 @@ class Game extends Component {
 
     }
 
+    /**
+     * Changes the current lesson to one selected by the user
+     * @param {number} lessonNum - Lesson chosen by the user
+     */
     onLesson(lessonNum) {
         this.setState({
             lesson: lessonNum,
         })
     }
 
+    /**
+     * Changes the current interface to one selected by the user
+     * @param {string} interfaceName
+     */
     onChangeInterface(interfaceName) {
         this.setState({
             currentInterface: interfaceName
         })
     }
 
+    /**
+     * Creates the three main components of the game
+     * @return {HTMLElement}
+     */
     render() {
         return (
             <div className="game">

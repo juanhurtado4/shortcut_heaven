@@ -1,3 +1,7 @@
+/**
+ *
+ * @type {{atom: {name: string, shortcuts: {sc1: string, sc2: string, sc3: string, sc4: string, sc5: string}}}}
+ */
 const interfaceProps = {
     atom: {
         name: 'Atom',
