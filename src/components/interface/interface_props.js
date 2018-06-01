@@ -1,6 +1,5 @@
 /**
- *
- * @type {{atom: {name: string, shortcuts: {sc1: string, sc2: string, sc3: string, sc4: string, sc5: string}}}}
+ * Holds the properties for all the interfaces
  */
 const interfaceProps = {
     atom: {

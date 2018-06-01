@@ -12,7 +12,6 @@ class Game extends Component {
 
     /**
      * Initiate the starting interface and lesson for the game
-     * @param {object} props - Properties passed down from parent
      */
     constructor(props) {
         super(props);
