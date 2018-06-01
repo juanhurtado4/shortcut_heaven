@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Lesson from "./lesson";
 
 /**
- * Container component for the ordered list of lesson navigation
+ * Container component for the ordered list in the lesson navigation
  */
 class LessonList extends Component {
     constructor(props) {
