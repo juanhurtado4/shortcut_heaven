@@ -1,7 +1,8 @@
 .lessons_nav {
   @include nav;
-  width: 20%;
   border-radius: .5rem;
+  margin: $marginComponentContainer;
+  min-width: 20%;
 
 }
 
