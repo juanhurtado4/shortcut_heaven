@@ -6,7 +6,7 @@
 }
 
 .lessons_nav__title {
-  color: darken(#fff, 30%);
+  color: $colorBaseFont;
   font-size: $fontBaseSize;
   text-align: center;
   padding: .3rem;
@@ -21,5 +21,5 @@
 }
 
 .lessons_nav__lesson__title {
-  color: darken(#fff, 40%);
+  color: darken($colorBaseFont, 3%);
 }
