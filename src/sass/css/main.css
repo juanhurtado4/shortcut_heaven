@@ -101,9 +101,10 @@ body {
 .interface {
   min-width: 35rem; }
 
-body {
+.game {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: flex-start; }
 
 .bezel {
   display: flex;
@@ -125,7 +126,8 @@ body {
   color: #fff;
   border-radius: .5rem;
   margin: 1.5rem 1.5rem 0px 1.5rem;
-  min-width: 20%; }
+  min-width: 20%;
+  min-height: 28.4rem; }
 
 .lessons_nav__title {
   color: #E5F0FB;
