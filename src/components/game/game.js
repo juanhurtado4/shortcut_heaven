@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // import LessonTips from "../lesson_tips/lesson_tips";
 import LessonNavigation from "../lesson_nav/lesson_nav";
 import interfaceProps from "../interface/interface_props";
+import Interface from "../interface/interface";
 
 /**
  * Container component for the game
@@ -50,8 +51,9 @@ class Game extends Component {
         return (
             <div className="game">
                 <LessonNavigation currentInterface={this.state.currentInterface}/>
+                <Interface currentInterface={this.state.currentInterface}/>
+                <div className="temp"></div>
                 {/*<LessonTips interface={this.state.interface.atom}/>*/}
-                {/*<Editor/>*/}
             </div>
         )
     }

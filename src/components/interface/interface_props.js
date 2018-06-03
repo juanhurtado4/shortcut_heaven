@@ -4,6 +4,7 @@
 const interfaceProps = {
     atom: {
         name: 'Atom',
+        type: 'editor',
         shortcuts: {
             sc1: 'Duplicate Line',
             sc2: 'Move Line',

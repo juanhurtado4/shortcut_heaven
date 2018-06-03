@@ -23,8 +23,8 @@ function _getEditorBezel(editorName) {
 }
 
 function MacBezel(props) {
-    let editorName = props.interface.name;
-    return props.interface.type === 'editor' ? _getEditorBezel(editorName) : _getBase();
+    let editorName = props.name;
+    return props.type === 'editor' ? _getEditorBezel(editorName) : _getBase();
 
 
 }
