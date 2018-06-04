@@ -20,7 +20,7 @@ body {
   /* Font */
   font-family: sans-serif;
   font-weight: normal;
-  background-color: #242A36; }
+  background: linear-gradient(to left, #242A36, #3D485F); }
 
 .btn--primary {
   background-color: #FC635D; }
