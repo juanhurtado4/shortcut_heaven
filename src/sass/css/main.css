@@ -20,7 +20,7 @@ body {
   /* Font */
   font-family: sans-serif;
   font-weight: normal;
-  background-color: #f6f8f9; }
+  background-color: #242A36; }
 
 .btn--primary {
   background-color: #FC635D; }
@@ -41,11 +41,9 @@ body {
 .bezel {
   background-color: #DDDBDD;
   border-radius: 10px 10px 0px 0px;
-  padding: 3px;
-  margin: 1.5rem 1.5rem 0px 1.5rem; }
+  padding: 3px; }
 
 .nav {
-  margin: 0 1.5rem;
   background-color: #21252B;
   color: #fff; }
 
@@ -57,7 +55,6 @@ body {
   width: 25%; }
 
 .editor {
-  margin: 0 1.5rem;
   background-color: #282C34;
   color: #4B5364;
   padding: 0 1.5rem;
@@ -94,16 +91,17 @@ body {
 .footer {
   background-color: #21252B;
   height: 1rem;
-  margin: 0 1.5rem;
   border-radius: 0 0 10px 10px;
   border-top: 1px solid #181A1F; }
 
 .interface {
-  min-width: 35rem; }
+  min-width: 35rem;
+  min-height: 30rem;
+  margin-top: 1rem; }
 
 .game {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start; }
 
 .bezel {
@@ -121,12 +119,11 @@ body {
   flex-direction: column; }
 
 .lessons_nav {
-  margin: 0 1.5rem;
   background-color: #21252B;
   color: #fff;
   border-radius: .5rem;
-  margin: 1.5rem 1.5rem 0px 1.5rem;
-  min-width: 20%;
+  margin: 1rem 2.5rem 0 1rem;
+  min-width: 18%;
   min-height: 28.4rem; }
 
 .lessons_nav__title {

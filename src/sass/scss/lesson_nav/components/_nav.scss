@@ -1,10 +1,10 @@
 .lessons_nav {
   @include nav;
   border-radius: .5rem;
-  margin: $marginComponentContainer;
-  min-width: 20%;
+  //margin: $marginComponentContainer;
+  margin: 1rem 2.5rem 0 1rem;
+  min-width: 18%;
   min-height: 28.4rem;
-
 }
 
 .lessons_nav__title {

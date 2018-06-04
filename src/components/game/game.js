@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 // import LessonTips from "../lesson_tips/lesson_tips";
 import LessonNavigation from "../lesson_nav/lesson_nav";
-import interfaceProps from "../interface/interface_props";
+import interfaceProps from "./interface_props";
 import Interface from "../interface/interface";
 
 /**
