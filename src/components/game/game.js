@@ -27,21 +27,21 @@ class Game extends Component {
      * Changes the current lesson to one selected by the user
      * @param {number} lessonNum - Lesson chosen by the user
      */
-    onLesson(lessonNum) {
+    onLesson = (lessonNum) => (
         this.setState({
             lesson: lessonNum,
         })
-    }
+    )
 
     /**
      * Changes the current interface to one selected by the user
      * @param {string} interfaceName
      */
-    onChangeInterface(interfaceName) {
+    onChangeInterface = (interfaceName) => (
         this.setState({
             currentInterface: interfaceName
         })
-    }
+    )
 
     /**
      * Creates the three main components of the game

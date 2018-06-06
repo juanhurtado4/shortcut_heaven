@@ -10,7 +10,7 @@ class Interface extends Component {
 
     render() {
 
-        let currentInterface = this.props.currentInterface;
+        let { currentInterface } = this.props;
 
         return (
             <EditorTemplate

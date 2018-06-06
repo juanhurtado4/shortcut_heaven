@@ -1,8 +1,7 @@
 import React from 'react';
 import MacBezel from "./bezel";
 
-function EditorHeader() {
-    return (
+const EditorHeader = () => (
         <header>
             <nav>
                 <div className="nav">
@@ -10,11 +9,9 @@ function EditorHeader() {
                 </div>
             </nav>
         </header>
-    )
-}
+);
 
-function EditorBody() {
-    return (
+const EditorBody = () => (
         <div className="editor">
             <span className="editor__ln">
                1
@@ -43,28 +40,20 @@ function EditorBody() {
             <span>19</span>
             <span>20</span>
         </div>
-    )
-}
+);
 
-function EditorFooter() {
-    return <footer className="footer"></footer>;
+const EditorFooter = () => <footer className="footer"></footer>;
 
-}
-
-
-function EditorTemplate(props) {
-    return (
+const EditorTemplate = ( { name, type } ) => (
         <div className="interface">
             <MacBezel
-                name={props.name}
-                type={props.type}
+                name={name}
+                type={type}
             />
             <EditorHeader/>
             <EditorBody/>
             <EditorFooter/>
         </div>
-    )
-
-}
+);
 
 export default EditorTemplate;
