@@ -1,5 +1,6 @@
 import React from 'react';
 import MacBezel from "./bezel";
+// TODO: Add a
 
 const EditorHeader = () => (
         <header>
@@ -11,12 +12,12 @@ const EditorHeader = () => (
         </header>
 );
 
-const EditorBody = () => (
+const EditorBody = ( { code } ) => (
         <div className="editor">
             <span className="editor__ln">
                1
                <span className="editor__ln--active">
-                  <input type="text" className="editor__ln--input" autoFocus/>
+                   {code}
                </span>
             </span>
 
@@ -44,14 +45,13 @@ const EditorBody = () => (
 
 const EditorFooter = () => <footer className="footer"></footer>;
 
-const EditorTemplate = ( { name, type } ) => (
+const EditorTemplate = ( { name, code } ) => (
         <div className="interface">
             <MacBezel
                 name={name}
-                type={type}
             />
             <EditorHeader/>
-            <EditorBody/>
+            <EditorBody code={code}/>
             <EditorFooter/>
         </div>
 );

@@ -16,8 +16,8 @@ class LessonNavigation extends Component {
     render() {
             return (
                 <aside className="lessons_nav">
-                    <h1 className="lessons_nav__title">{this.props.currentInterface.name} Shortcuts</h1>
-                    <LessonList lessons={this.props.currentInterface.shortcuts}/>
+                    <h1 className="lessons_nav__title">Atom Shortcuts</h1>
+                    <LessonList lessons={this.props.lessons}/>
                 </aside>
             )
         }

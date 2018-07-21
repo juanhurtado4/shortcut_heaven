@@ -14,8 +14,8 @@ class LessonList extends Component {
      * @return {HTMLElement}
      */
     render() {
-        const lessonComponents = Object.entries(this.props.lessons).map((shortcut, index) => {
-            return <Lesson lesson={shortcut[1]} key={index}/>
+        const lessonComponents = Object.values(this.props.lessons).map((lesson, index) => {
+            return <Lesson lesson={lesson.name} key={index}/>
         });
 
         return (

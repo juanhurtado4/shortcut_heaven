@@ -9,7 +9,7 @@
 
 .lessons_nav__title {
   color: $colorBaseFont;
-  font-size: $fontBaseSize;
+  font-size: 1.3rem;
   text-align: center;
   padding: .3rem;
 
@@ -17,6 +17,7 @@
 
 .lessons_nav__lesson {
   @include nav-header;
+  font-size: 1rem;
   border-bottom: 1px solid $colorDarkThemeLight;
   padding: .5rem;
 

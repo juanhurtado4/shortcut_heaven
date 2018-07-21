@@ -14,13 +14,19 @@
   outline: none; }
 
 html {
-  font-size: 20px; }
+  font-size: 16px; }
 
 body {
   /* Font */
   font-family: sans-serif;
   font-weight: normal;
-  background: linear-gradient(to left, #242A36, #3D485F); }
+  background: linear-gradient(to left, #35476a, #42577c, #586f9b); }
+
+.gameTitle {
+  margin: 5% 15%;
+  color: white;
+  letter-spacing: .2rem;
+  font-weight: 300; }
 
 .btn--primary {
   background-color: #FC635D; }
@@ -128,17 +134,30 @@ body {
 
 .lessons_nav__title {
   color: #E5F0FB;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-align: center;
   padding: .3rem; }
 
 .lessons_nav__lesson {
   background-color: #282C34;
   font-size: .8rem;
+  font-size: 1rem;
   border-bottom: 1px solid #3e4451;
   padding: .5rem; }
 
 .lessons_nav__lesson__title {
   color: #d8e8f9; }
+
+.js-key {
+  color: #C49CCA; }
+
+.js-var {
+  color: #CCCCCC; }
+
+.js-symbol {
+  color: #80CBCB; }
+
+.js-str {
+  color: #8EC49C; }
 
 /*# sourceMappingURL=main.css.map */

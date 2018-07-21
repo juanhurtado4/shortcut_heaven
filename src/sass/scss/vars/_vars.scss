@@ -13,6 +13,10 @@ $colorEditorNum: #4B5364;
 $colorEditorBlinker: #528BFF;
 $colorEditorActiveLn: #2C323C;
 $colorDarkThemeLight: lighten($colorEditorBg, 10%);
+$colorJsKey: #C49CCA;
+$colorJsVar: #CCCCCC;
+$colorJsSymbol: #80CBCB;
+$colorJsString: #8EC49C;
 
 
 
@@ -23,7 +27,7 @@ $marginComponentContainer: 1.5rem 1.5rem 0px 1.5rem;
 $paddingBaseBody: 0;
 
 /* Font */
-$fontBaseSize: 20px;
+$fontBaseSize: 16px;
 
 
 

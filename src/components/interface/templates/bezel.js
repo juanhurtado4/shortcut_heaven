@@ -19,8 +19,15 @@ const _getEditorBezel = (editorName) => {
     return _getBase(editorTitle);
 };
 
-const MacBezel = ({ name: editorName, type: interfaceType }) => (
-    interfaceType === 'editor' ? _getEditorBezel(editorName) : _getBase()
+const MacBezel = ({ name }) => (
+    <div className="bezel">
+        <div className="btn btn--bezel btn--caution"></div>
+        <div className="btn btn--bezel btn--secondary"></div>
+        <div className="btn btn--bezel btn--primary"></div>
+        <span className="bezel__title">
+                {name}_shortcut.js - ~/code/shortcuts
+        </span>
+    </div>
 
 );
 
