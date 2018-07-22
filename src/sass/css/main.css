@@ -20,13 +20,28 @@ body {
   /* Font */
   font-family: sans-serif;
   font-weight: normal;
-  background: linear-gradient(to left, #35476a, #42577c, #586f9b); }
+  background: linear-gradient(to right, #50617F, #3D485F);
+  overflow: hidden; }
 
-.gameTitle {
-  margin: 5% 15%;
-  color: white;
+.header {
+  width: 100%;
+  margin-bottom: 1.5rem; }
+
+.game__main {
+  width: 75%; }
+
+.game__title--container {
+  margin-bottom: 5%;
+  margin-top: 0;
+  color: #bfbfbf;
   letter-spacing: .2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center; }
+
+.game__title {
+  transform: translateX(-50%); }
 
 .btn--primary {
   background-color: #FC635D; }
@@ -64,7 +79,7 @@ body {
   background-color: #282C34;
   color: #4B5364;
   padding: 0 1.5rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 2rem; }
 
 .editor__ln--active {
   margin-left: 1.5rem;
@@ -96,19 +111,23 @@ body {
     opacity: 1; } }
 .footer {
   background-color: #21252B;
-  height: 1rem;
+  height: 2rem;
   border-radius: 0 0 10px 10px;
   border-top: 1px solid #181A1F; }
 
 .interface {
-  min-width: 35rem;
+  width: 72%;
   min-height: 30rem;
   margin-top: 1rem; }
 
-.game {
+.App {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  justify-content: space-between; }
+
+.game__main {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll; }
 
 .bezel {
   display: flex;
@@ -128,8 +147,9 @@ body {
   background-color: #21252B;
   color: #fff;
   border-radius: .5rem;
-  margin: 1rem 2.5rem 0 1rem;
+  margin: 1rem 1.5rem 0 1rem;
   min-width: 18%;
+  width: 20%;
   min-height: 28.4rem; }
 
 .lessons_nav__title {
@@ -159,5 +179,36 @@ body {
 
 .js-str {
   color: #8EC49C; }
+
+.fa-crown {
+  color: #FDBC40;
+  font-size: 3rem; }
+
+.header__logo {
+  font-size: 2.3rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  letter-spacing: 3px;
+  color: white; }
+
+.fab,
+.contact {
+  margin-right: 1rem; }
+  .fab:hover,
+  .contact:hover {
+    color: #FDBC40; }
+
+.game__title {
+  animation-name: pulse;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; }
+
+@keyframes pulse {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
 
 /*# sourceMappingURL=main.css.map */

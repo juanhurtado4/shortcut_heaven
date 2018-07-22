@@ -17,16 +17,39 @@ body {
   font-weight: normal;
   //background-color: #f6f8f9;
   //background-color: #161C34;
-  //background: linear-gradient(to right, #50617F, #3D485F);
-  background: linear-gradient(to left, #35476a, #42577c, #586f9b);
+  background: linear-gradient(to right, #50617F, #3D485F);
+  //background: linear-gradient(to bottom, #35476a, #42577c, #586f9b);
+  //background: linear-gradient(to bottom, #35476a, #42577c, #586f9b);
   //background: #242A36;
+  overflow: hidden;
 
 }
 
-.gameTitle {
-  margin: 5% 15%;
-  color: white;
+.header {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  //background-color: #3a445a;
+}
+
+.game__main {
+  width: 75%;
+}
+
+.game__title--container {
+  margin-bottom: 5%;
+  margin-top: 0;
+  color: #bfbfbf;
   letter-spacing: .2rem;
   font-weight: 300;
+  font-size: 1.3rem;
+  //order: -1;
+  width: 100%;
+  text-align: center;
+  //position: relative;
+}
 
+.game__title {
+  transform: translateX(-50%);
+  //position: absolute;
+  //left: 50%;
 }

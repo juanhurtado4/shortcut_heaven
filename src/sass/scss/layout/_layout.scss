@@ -1,10 +1,14 @@
-.game {
+.App {
   display: flex;
-  //justify-content: space-between;
-  justify-content: flex-start;
-  align-items: flex-start;
-  //align-items: center;
+  justify-content: space-between;
+  //flex-wrap: wrap;
+}
 
+.game__main {
+  display: flex;
+  flex-wrap: wrap;
+  //order: 1;
+  overflow: scroll;
 }
 
 .bezel {

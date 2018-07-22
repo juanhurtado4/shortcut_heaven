@@ -1,0 +1,23 @@
+.fa-crown {
+  color: $colorSecondary;
+  font-size: 3rem;
+}
+
+.header__logo {
+  font-size: 2.3rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  letter-spacing: 3px;
+  color: white;
+
+}
+
+.fab,
+.contact {
+
+  margin-right: 1rem;
+  &:hover {
+    color: $colorSecondary;
+  }
+}
