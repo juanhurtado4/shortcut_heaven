@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const duplicateCode = (
+const txtContainer = (num, code) => (
+    <span className="editor__ln">
+        {num}
+        <span className="editor__ln--active">{ code }</span>
+    </span>
+);
+
+const duplicateTxt = txtContainer(1,
         <pre><code>
             <span className="js-key">const</span> <span className="js-var">duplicateMe</span>
             <span className="js-symbol"> = </span>
             <span className="js-str">"You ain't got the answers Sway!"</span>
             <span className="js-var">;</span>
         </code></pre>
+);
+
+const solvedDuplicateTxt = (
+    <Fragment>
+        { txtContainer(1) }
+        { txtContainer(2) }
+    </Fragment>
 );
 const moveLine = (
         <pre><code>
@@ -36,10 +50,13 @@ const deleteHalf = (
 const game_lessons = {
     'duplicateLine': {
         name: 'Duplicate Line',
-        snakeCase: 'duplicate_line',
+        id: 'duplicate_line',
         status: false,
-        code: duplicateCode,
-        tip: 'Duplicate tip'
+        code: duplicateTxt,
+        solvedCode: solvedDuplicateTxt,
+        tip: 'Duplicate tip',
+        lines: {default: 2, solved: 3},
+        next: 'moveLine'
     },
     'moveLine': {
         name: 'Move Line',
