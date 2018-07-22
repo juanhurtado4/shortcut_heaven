@@ -50,7 +50,7 @@ const deleteHalf = (
 const game_lessons = {
     'duplicateLine': {
         name: 'Duplicate Line',
-        id: 'duplicate_line',
+        id: 'duplicateLine',
         status: false,
         code: duplicateTxt,
         solvedCode: solvedDuplicateTxt,

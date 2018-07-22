@@ -25,7 +25,7 @@ const MacBezel = ({ name }) => (
         <div className="btn btn--bezel btn--secondary"></div>
         <div className="btn btn--bezel btn--primary"></div>
         <span className="bezel__title">
-                {name}_shortcut.js - ~/code/shortcuts
+                {name}Shortcut.js - ~/code/shortcuts
         </span>
     </div>
 
