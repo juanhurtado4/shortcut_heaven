@@ -1,7 +1,7 @@
 const DUPLICATE_LINE = 'DUPLICATE_LINE';
 const NEXT_LESSON = 'NEXT_LESSON';
 
-const editor = (state = {}, action) => {
+const editor_reducer = (state = {}, action) => {
     switch(action.type) {
         case DUPLICATE_LINE:
             return {
@@ -14,4 +14,4 @@ const editor = (state = {}, action) => {
     }
 };
 
-export default editor;
+export default editor_reducer;
