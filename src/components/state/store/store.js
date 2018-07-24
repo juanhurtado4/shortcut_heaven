@@ -1,17 +1,14 @@
-import game_lessons from "../../game/game_lessons";
+import gameLessons from "../../main_game/game_lessons";
 import rootReducer from "../reducers/root_reducer";
-// TODO: Change component to account for status and lesson name being global
-// TODO: Change reducers to account for the same as above
-// TODO: Have UI for every single lesson. Before and after
 
 class Store {
     constructor(reducer) {
         this.state = {
-            status: game_lessons.duplicateLine.status,
-            lessonName: game_lessons.duplicateLine.id,
+            status: gameLessons.duplicateLine.status,
+            lessonName: gameLessons.duplicateLine.id,
             editor: {
-                code: game_lessons.duplicateLine.code,
-                lines: game_lessons.duplicateLine.lines.default,
+                code: gameLessons.duplicateLine.code,
+                lines: gameLessons.duplicateLine.lines.default,
             },
             tips: {
                 // text of current lesson
