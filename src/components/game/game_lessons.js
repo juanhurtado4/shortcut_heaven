@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import duplicateAnswer from "../state/events/keyboard_events";
 
 const txtContainer = (num, code) => (
     <span className="editor__ln">
@@ -52,12 +53,15 @@ const game_lessons = {
         name: 'Duplicate Line',
         id: 'duplicateLine',
         status: false,
-        code: duplicateTxt,
-        solvedCode: solvedDuplicateTxt,
+        code: "You ain't got the answers Sway!",
+        solvedCode: "You ain't got the answers Sway!",
         tip: 'Duplicate tip',
         lines: {default: 2, solved: 3},
-        next: 'moveLine'
-    },
+        next: 'moveLine',
+        bindShortcut() { hotkeys('cmd+shift_d', duplicateAnswer) },
+        unBindShortcut() { hotkeys.unbind('cmd+shift+d') },
+
+},
     'moveLine': {
         name: 'Move Line',
         status: false,
