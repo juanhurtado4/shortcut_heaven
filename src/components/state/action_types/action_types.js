@@ -1,0 +1,7 @@
+const DUPLICATE_LINE = 'DUPLICATE_LINE';
+const NEXT_LESSON = 'NEXT_LESSON';
+
+export {
+    DUPLICATE_LINE,
+    NEXT_LESSON,
+};
