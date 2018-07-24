@@ -1,6 +1,6 @@
 import React from 'react';
 import MacBezel from "./bezel";
-// TODO: Add a
+import store from '../../state/store/store';
 
 const EditorHeader = () => (
         <header>
@@ -15,12 +15,12 @@ const EditorHeader = () => (
 const EditorBody  = ( { code, lines } ) => {
     const editorLines = [];
     for (let i = lines; i < 21; i++) {
-        editorLines.push(<span>{i}</span>);
+        editorLines.push(<span key={i}>{i}</span>);
     }
 
     return (
         <div className="editor">
-            {code}
+            {code()}
             {editorLines}
         </div>
     );
@@ -28,18 +28,21 @@ const EditorBody  = ( { code, lines } ) => {
 
 const EditorFooter = () => <footer className="footer"></footer>;
 
-const EditorTemplate = ( { lesson, code, lines } ) => (
+const EditorTemplate = () => {
+    const currState = store.getState();
+    return (
         <div className="interface">
             <MacBezel
-                name={lesson}
+                name={ currState.lessonName }
             />
             <EditorHeader/>
             <EditorBody
-                code={code}
-                lines={lines}
+                code={ currState.editor.code }
+                lines={ currState.editor.lines }
             />
             <EditorFooter/>
         </div>
-);
+    );
+};
 
 export default EditorTemplate;
