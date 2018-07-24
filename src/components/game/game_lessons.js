@@ -1,28 +1,30 @@
 import React, { Fragment } from 'react';
 import duplicateAnswer from "../state/events/keyboard_events";
+import ActiveLine from "../interface/active_line";
 
-const txtContainer = (num, code) => (
-    <span className="editor__ln">
-        {num}
-        <span className="editor__ln--active">{ code }</span>
-    </span>
+const duplicateTxt = () => (
+    <ActiveLine
+        jsStr={`'You ain't got the answers Sway!'`}
+        jsVar={'duplicateMe'}
+        num={1}
+    />
 );
 
-const duplicateTxt = txtContainer(1,
-        <pre><code>
-            <span className="js-key">const</span> <span className="js-var">duplicateMe</span>
-            <span className="js-symbol"> = </span>
-            <span className="js-str">"You ain't got the answers Sway!"</span>
-            <span className="js-var">;</span>
-        </code></pre>
-);
-
-const solvedDuplicateTxt = (
+const solvedDuplicateTxt = () => (
     <Fragment>
-        { txtContainer(1) }
-        { txtContainer(2) }
+        <ActiveLine
+            jsStr={`'You ain't got the answers Sway!'`}
+            jsVar={'duplicateMe'}
+            num={1}
+        />
+        <ActiveLine
+            jsStr={`'You ain't got the answers Sway!'`}
+            jsVar={'duplicateMe'}
+            num={2}
+        />
     </Fragment>
 );
+
 const moveLine = (
         <pre><code>
             <span className="js-key">const</span> <span className="js-var">move</span>
@@ -53,8 +55,8 @@ const game_lessons = {
         name: 'Duplicate Line',
         id: 'duplicateLine',
         status: false,
-        code: "You ain't got the answers Sway!",
-        solvedCode: "You ain't got the answers Sway!",
+        code: duplicateTxt,
+        solvedCode: solvedDuplicateTxt,
         tip: 'Duplicate tip',
         lines: {default: 2, solved: 3},
         next: 'moveLine',
