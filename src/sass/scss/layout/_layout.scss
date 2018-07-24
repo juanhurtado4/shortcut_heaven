@@ -8,7 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   //order: 1;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .bezel {
