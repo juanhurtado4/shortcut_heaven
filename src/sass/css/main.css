@@ -127,7 +127,8 @@ body {
 .game__main {
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 .bezel {
   display: flex;
