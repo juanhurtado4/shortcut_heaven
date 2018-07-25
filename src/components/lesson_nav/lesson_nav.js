@@ -24,6 +24,4 @@ const LessonNavContainer = () => {
     return <LessonList lessons={lessonComponents}/>
 };
 
-
-
 export default LessonNavContainer;
