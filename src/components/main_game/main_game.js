@@ -12,13 +12,24 @@ import OnSuccessModal from "./modal";
 // calling from redux store
 // TODO: Add lesson tips component
 // TODO: Create update status reducer
-// TODO: Add success modal
+// TODO: Create variable to add overlay to dim the body
+// TODO: Remove logger from store dispatch
+// TODO: Add a slight delay to modal appearing
+// TODO: Animate modal
+// TODO: Style modal
+// TODO: Put styles in css
+// TODO: Try to change header pulse to example from email article
+// TODO: Remove testing button
 
 class MainGame extends Component {
 
     componentDidMount() {
         store.subscribe(() => {
             this.forceUpdate();
+        });
+
+        store.subscribe(() => {
+            console.log('State after: ', store.getState());
         });
 
         gameLessons.duplicateLine.bindShortcut();
@@ -32,8 +43,8 @@ class MainGame extends Component {
         return (
             <Fragment>
                 <div className="game__main">
-                    <MainHeader/>
                     <OnSuccessModal/>
+                    <MainHeader/>
                     <LessonNavContainer/>
                     <EditorTemplate/>
                     <MainFooter/>
