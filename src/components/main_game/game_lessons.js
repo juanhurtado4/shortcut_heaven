@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import duplicateAnswer from "../state/events/keyboard_events";
+import onDuplicateAnswer from "../state/events/keyboard_events";
 import ActiveLine from "../interface/active_line";
+import hotkeys from 'hotkeys-js';
 
 const duplicateTxt = () => (
     <ActiveLine
@@ -33,6 +34,7 @@ const moveLine = (
             <span className="js-var">;</span>
         </code></pre>
 );
+
 const cutLine = (
         <pre><code>
             <span className="js-key">const</span> <span className="js-var">cutLine</span>
@@ -41,6 +43,7 @@ const cutLine = (
             <span className="js-var">;</span>
         </code></pre>
 );
+
 const deleteHalf = (
         <pre><code>
             <span className="js-key">const</span> <span className="js-var">deleteHalf</span>
@@ -50,7 +53,7 @@ const deleteHalf = (
         </code></pre>
 );
 
-const game_lessons = {
+const gameLessons = {
     'duplicateLine': {
         name: 'Duplicate Line',
         id: 'duplicateLine',
@@ -60,7 +63,7 @@ const game_lessons = {
         tip: 'Duplicate tip',
         lines: {default: 2, solved: 3},
         next: 'moveLine',
-        bindShortcut() { hotkeys('cmd+shift_d', duplicateAnswer) },
+        bindShortcut() { hotkeys('cmd+shift+d', onDuplicateAnswer) },
         unBindShortcut() { hotkeys.unbind('cmd+shift+d') },
 
 },
@@ -90,4 +93,4 @@ const game_lessons = {
     }
 };
 
-export default game_lessons;
+export default gameLessons;
