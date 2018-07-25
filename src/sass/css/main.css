@@ -43,13 +43,13 @@ body {
   transform: translateX(-50%);
   font-weight: 200; }
 
-.btn--primary {
+.btn--caution {
   background-color: #FC635D; }
 
 .btn--secondary {
   background-color: #FDBC40; }
 
-.btn--caution {
+.btn--primary {
   background-color: #34C84A; }
 
 .btn--bezel {
