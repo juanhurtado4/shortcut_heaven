@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: $fontBaseSize;
+  font-size: $base;
 
 }
 
@@ -28,7 +28,6 @@ body {
 .header {
   width: 100%;
   margin-bottom: 1.5rem;
-  //background-color: #3a445a;
 }
 
 .game__main {
@@ -41,15 +40,11 @@ body {
   color: #bfbfbf;
   letter-spacing: .2rem;
   font-size: 1.3rem;
-  //order: -1;
   width: 100%;
   text-align: center;
-  //position: relative;
 }
 
 .game__title {
   transform: translateX(-50%);
   font-weight: 200;
-  //position: absolute;
-  //left: 50%;
 }

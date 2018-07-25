@@ -3,7 +3,6 @@
 /**************************/
 /* Color */
 /* Dimension */
-/* Font */
 /**************************/
 /*** Bezel ***/
 /**************************/
@@ -53,8 +52,7 @@ body {
   border-radius: 3px;
   transition: background-color 0.3s;
   color: white;
-  padding: .5rem 1rem;
-  margin-right: .5rem; }
+  padding: 0.5rem 16px; }
   .btn:hover, .btn:focus {
     text-decoration: none; }
 
@@ -88,7 +86,7 @@ body {
   width: .6rem;
   border-radius: 100px;
   display: inline-block;
-  margin-left: .5rem; }
+  margin-left: 0.5rem; }
 
 .bezel {
   background-color: #DDDBDD;
@@ -110,7 +108,10 @@ body {
   background-color: #282C34;
   color: #4B5364;
   padding: 0 1.5rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  height: 50vh;
+  max-height: 50vh;
+  min-height: 23rem; }
 
 .editor__ln--active {
   margin-left: 1.5rem;
@@ -231,6 +232,9 @@ body {
   .contact:hover {
     color: #FDBC40; }
 
+.fa-times:active {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+
 .game__title {
   animation-name: pulse;
   animation-duration: 1.8s;
@@ -242,5 +246,64 @@ body {
     transform: scale(1); }
   to {
     transform: scale(1.2); } }
+.m {
+  margin: 16px; }
+
+.m-t {
+  margin-top: 16px; }
+
+.m-r {
+  margin-right: 16px; }
+
+.m-b {
+  margin-bottom: 16px; }
+
+.m-r {
+  margin-right: 16px; }
+
+.ms {
+  margin: 0.5rem; }
+
+.ms-t {
+  margin-top: 0.5rem; }
+
+.ms-r {
+  margin-right: 0.5rem; }
+
+.ms-b {
+  margin-bottom: 0.5rem; }
+
+.ms-r {
+  margin-right: 0.5rem; }
+
+.p {
+  margin: 16px; }
+
+.p-t {
+  margin-top: 16px; }
+
+.p-r {
+  margin-right: 16px; }
+
+.p-b {
+  margin-bottom: 16px; }
+
+.p-r {
+  margin-right: 16px; }
+
+.ps {
+  margin: 0.5rem; }
+
+.ps-t {
+  margin-top: 0.5rem; }
+
+.ps-r {
+  margin-right: 0.5rem; }
+
+.ps-b {
+  margin-bottom: 0.5rem; }
+
+.ps-r {
+  margin-right: 0.5rem; }
 
 /*# sourceMappingURL=main.css.map */

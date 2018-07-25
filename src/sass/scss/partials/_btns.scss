@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  font-weight: $fontBaseSize;
+  font-weight: $base;
   text-align: center;
   white-space: nowrap;
   user-select: none;
@@ -8,8 +8,7 @@
   border-radius: 3px;
   transition: background-color 0.3s;
   color: white;
-  padding: .5rem 1rem;
-  margin-right: .5rem;
+  padding: $baseSmall $base;
 
   &:hover,
   &:focus {
@@ -66,6 +65,6 @@
   width: .6rem;
   border-radius: 100px;
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: $baseSmall;
 
 }
