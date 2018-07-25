@@ -1,3 +1,51 @@
+.btn {
+  display: inline-block;
+  font-weight: $fontBaseSize;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  color: white;
+  padding: .5rem 1rem;
+  margin-right: .5rem;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+}
+
+.btn--default {
+  background-color: $colorDefault;
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+  }
+
+  &:active {
+    background-color: #0062cc;
+  }
+}
+
+.btn--grey {
+  background-color: $colorGrey;
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(179, 188, 196, 0.5);
+  }
+
+  &:active {
+    background-color: darken($colorGrey, 10%);
+  }
+}
+
 .btn--caution {
   background-color: $colorCaution;
 

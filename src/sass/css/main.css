@@ -43,6 +43,37 @@ body {
   transform: translateX(-50%);
   font-weight: 200; }
 
+.btn {
+  display: inline-block;
+  font-weight: 16px;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  color: white;
+  padding: .5rem 1rem;
+  margin-right: .5rem; }
+  .btn:hover, .btn:focus {
+    text-decoration: none; }
+
+.btn--default {
+  background-color: #2C7DF6; }
+  .btn--default:focus, .btn--default.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+  .btn--default:active {
+    background-color: #0062cc; }
+
+.btn--grey {
+  background-color: #6D747C; }
+  .btn--grey:focus, .btn--grey.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(179, 188, 196, 0.5); }
+  .btn--grey:active {
+    background-color: #555b61; }
+
 .btn--caution {
   background-color: #FC635D; }
 
