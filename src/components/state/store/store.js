@@ -6,6 +6,11 @@ class CreateStore {
         this.state = {
             status: gameLessons.duplicateLine.status,
             lessonName: gameLessons.duplicateLine.id,
+            modal: {
+                status: gameLessons.duplicateLine.modalStatus,
+                title: gameLessons.duplicateLine.modalTitle,
+                body: gameLessons.duplicateLine.modalBody,
+            },
             editor: {
                 code: gameLessons.duplicateLine.code,
                 lines: gameLessons.duplicateLine.lines.default,
@@ -26,6 +31,7 @@ class CreateStore {
     };
 
     dispatch = (action) => {
+        console.log('State before: ', this.state);
         this.state = this.reducer(this.state, action);
         this.listeners.forEach((listener) => listener())
     };

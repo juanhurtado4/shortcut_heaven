@@ -1,8 +1,13 @@
-import editor_reducer from "./editor_reducer";
+import editorReducer from "./editor_reducer";
+import modalReducer from "./modal_reducer";
+import statusReducer from "./status_reducer";
 
 const rootReducer = (state = {}, action) => {
     return {
-        editor: editor_reducer(state.editor, action),
+        ...state,
+        editor: editorReducer(state.editor, action),
+        modal: modalReducer(state.modal, action),
+        status: statusReducer(state.status, action),
     }
 };
 

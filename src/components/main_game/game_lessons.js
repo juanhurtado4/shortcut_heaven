@@ -65,8 +65,10 @@ const gameLessons = {
         next: 'moveLine',
         bindShortcut() { hotkeys('cmd+shift+d', onDuplicateAnswer) },
         unBindShortcut() { hotkeys.unbind('cmd+shift+d') },
-
-},
+        modalTitle: 'Duplicate Title',
+        modalBody: 'Duplicate Body',
+        modalStatus: false,
+    },
     'moveLine': {
         name: 'Move Line',
         status: false,
