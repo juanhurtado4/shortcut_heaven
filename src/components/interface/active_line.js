@@ -1,29 +1,18 @@
-import React, { Component } from 'react';
-import hotkeys from 'hotkeys-js';
+import React, { Fragment } from 'react';
 
-class HotKeysDemo extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            output: 'Trying this first',
-        };
-        hotkeys('cmd+shift+d', (e, handle) => this.onCopySC(e, handle))
-    }
-    onCopySC(e, handle) {
-        e.preventDefault();
-        this.setState({output: 'cmd was pressed'});
-        console.log(handle);
-    }
+const ActiveLine = ( { jsVar, jsStr, num } ) => (
+    <span className="editor__ln">
+            {num}
+            <span className="editor__ln--active">
+                <pre><code>
+                    <span className="js-key">const</span> <span className="js-var">{jsVar}</span>
+                    <span className="js-symbol"> = </span>
+                    <span className="js-str">{jsStr}</span>
+                    <span className="js-var">;</span>
+                </code></pre>
+            </span>
+        </span>
 
-    render() {
-        return (
-            <div>
-                <div > {this.state.output} </div>
-            </div>
-        )
-    }
-}
+);
 
-// hotkeys('cmd', () => console.log('hello'));
-
-export default HotKeysDemo;
+export default ActiveLine;
