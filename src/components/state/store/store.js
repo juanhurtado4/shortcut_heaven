@@ -1,7 +1,7 @@
 import gameLessons from "../../main_game/game_lessons";
 import rootReducer from "../reducers/root_reducer";
 
-class Store {
+class CreateStore {
     constructor(reducer) {
         this.state = {
             status: gameLessons.duplicateLine.status,
@@ -31,6 +31,6 @@ class Store {
     };
 }
 
-const store = new Store(rootReducer);
+const store = new CreateStore(rootReducer);
 
 export default store;
