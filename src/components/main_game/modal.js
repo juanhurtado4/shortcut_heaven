@@ -12,6 +12,7 @@ const hide = {
     display: 'flex',
     flexDirection: 'column',
     borderRadius: '3px',
+    overflow: 'hidden'
 };
 
 const show = {
