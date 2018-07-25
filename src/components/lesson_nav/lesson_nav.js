@@ -1,26 +1,29 @@
 import React, { Component } from "react";
-import LessonList from "./lesson_list";
+import gameLessons from "../main_game/game_lessons";
 
-/**
- * Container component for the lesson navigation
- * */
+const Lesson = ( { lesson } ) => (
+    <div className="lessons_nav__lesson">
+        <div className="lessons_nav__lesson__status"></div>
+        <a className="lessons_nav__lesson__title">{lesson}</a>
+    </div>
+);
 
-class LessonNavigation extends Component {
-    constructor(props) {
-        super(props);
-    }
+const LessonList = ( { lessons } ) => (
+    <aside className="lessons_nav">
+        <h1 className="lessons_nav__title">Atom Shortcuts</h1>
+        <ol>
+            {lessons}
+        </ol>
+    </aside>
+);
 
-    /** Creates the container for all lessons navigation including current lesson
-     * @return {HTMLElement} - Where all of the lesson list live
-     */
-    render() {
-            return (
-                <aside className="lessons_nav">
-                    <h1 className="lessons_nav__title">Atom Shortcuts</h1>
-                    <LessonList lessons={this.props.lessons}/>
-                </aside>
-            )
-        }
-}
+const LessonNavContainer = () => {
+    const lessonComponents = Object.values(gameLessons).map((lesson, index) => {
+        return <Lesson lesson={lesson.name} key={index}/>
+    });
+    return <LessonList lessons={lessonComponents}/>
+};
 
-export default LessonNavigation;
+
+
+export default LessonNavContainer;
