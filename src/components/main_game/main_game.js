@@ -11,15 +11,11 @@ import OnSuccessModal from "./modal";
 // TODO: Button to change between lessons will have an event that unbinds previous shortcut and binds current by -
 // calling from redux store
 // TODO: Add lesson tips component
-// TODO: Create update status reducer
-// TODO: Create variable to add overlay to dim the body
 // TODO: Remove logger from store dispatch
 // TODO: Add a slight delay to modal appearing
 // TODO: Animate modal
-// TODO: Style modal
 // TODO: Put styles in css
 // TODO: Try to change header pulse to example from email article
-// TODO: Remove testing button
 
 class MainGame extends Component {
 
