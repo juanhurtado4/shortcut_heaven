@@ -6,6 +6,22 @@
 
 }
 
+.show-modal {
+  animation: reveal .4s ease-in-out;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    top: -1%;
+  }
+
+  to {
+    opacity: 1;
+    top: 2%;
+  }
+}
+
 @keyframes pulse {
   from {
     transform: scale(1);
